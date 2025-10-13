@@ -1,9 +1,4 @@
-// Mock test (generated from the provided international-current-affairs subtitle notes)
-// total questions generated from the notes
-const totalQuestions = 60;
-let currentQuestion = 1;
-const answers = {};
-let totalSeconds = 0;
+
 
 const questions = {
   1: {
@@ -309,93 +304,65 @@ const questions = {
 };
 
 const explanations = {
-  1: "The 28th session of the UN Forum on Forests (UNFF) was held at the United Nations Headquarters in New York. The notes specifically say the Indian delegation was led by Shri Sushil Kumar Awasthi.",
-  2: "China unveiled the CR450 prototype — a very high-speed train designed to achieve speeds up to 450 km/h (operational speeds often quoted near 400–450 km/h for prototypes). This was contrasted in the notes with India's fastest semi-high-speed trains (Vande Bharat).",
-  3: "The notes mention Hanoi, Vietnam, as recently declared the world's most polluted city in the data discussed. The subtitle specifically states Hanoi was declared most polluted, citing the referenced source in the lecture.",
-  4: "Bhutan launched a national crypto-currency tourism payment system allowing tourists to make payments using cryptocurrencies — the notes emphasised Bhutan as first country to do this at a national tourism payments level.",
-  5: "The note explicitly says Bhutan's national sport is archery — a long-standing cultural fact (archery is widely practiced and celebrated in Bhutan).",
-  6: "Thimphu is the capital of Bhutan; the notes mention the capital in the same section where Bhutan's crypto tourism system and national sport were discussed.",
-  7: "The notes listed Bhutan's currency as the Ngultrum. The Ngultrum (BTN) is pegged to the Indian Rupee and is the country's official currency.",
-  8: "The subtitles listed West Bengal, Sikkim, Arunachal Pradesh and Assam among Indian states that share borders with Bhutan. These four Indian states have frontiers with Bhutan at various points.",
-  9: "The subtitles say that during his presidency Donald Trump pulled the US out of the WHO (World Health Organization). The lecture also referenced his pullback from climate commitments (Paris Agreement) historically.",
-  10: "The Paris Agreement (COP21) was negotiated and adopted in Paris — the notes highlighted COP21 and the objective of keeping global warming well below 2°C and pursuing efforts to limit it to 1.5°C.",
-  11: "The Indus Water Treaty (1960) between India and Pakistan was mediated by the World Bank — the subtitle articulates the treaty's origin and the World Bank's role in mediation.",
-  12: "The notes stated Pakistan suspended bilateral deals including the Shimla Agreement after India suspended the Indus Water Treaty — this was reported contextually in the lecture narration.",
-  13: "WASH stands for Water, Sanitation and Hygiene. The notes referred to an India–Nepal MoU in the WASH sector — a common development cooperation area.",
-  14: "The World Economic Forum's annual meeting in Davos (WEF 2025) was mentioned as the 55th meeting and was held in Davos, Switzerland — the notes referenced this centre for global dialogue.",
-  15: "The subtitle listed several organisations with Geneva HQs — WHO, WTO and ILO were cited as organisations headquartered in Geneva (consistent with established international facts).",
-  16: "The notes mentioned a very long expressway tunnel constructed in China (the text called it the Atian Shan Shengli tunnel or similar). The lecture contrasted this with India's longest road tunnels.",
-  17: "The notes described PM Modi attending the AI Action Summit 2025 in Paris and being present alongside the French President (Macron) — that’s why this is asked as a summit-related fact in the notes.",
-  18: "The 8th Indian Ocean Conference (IOC) was held in Muscat, Oman — the notes mentioned Muscat and provided the conference theme (noted as less important by the lecturer).",
-  19: "Lake Tanganyika is bordered by Burundi, the Democratic Republic of the Congo (DRC), Tanzania and Zambia — these countries were explicitly listed in the lecture.",
-  20: "IIT Madras was mentioned as opening its first overseas centre in the Lake Tanganyika region as per the lecture notes; the institute was referenced in regional academic collaboration context.",
-  21: "The notes recorded a statue of the Tamil poet-philosopher Thiruvalluvar being unveiled at an overseas location mentioned as Glasgow College of Medicine in Cebu — the subtitle explicitly named Thiruvalluvar.",
-  22: "Mount Fantale in Ethiopia was highlighted for releasing unusually high methane levels during an eruption — the lecture flagged this as an unusual volcanic emission behaviour.",
-  23: "Uganda, with WHO support, initiated a clinical trial for a vaccine targeting the Sudan strain of Ebola during a recent outbreak — the lecture noted this as a WHO-supported trial.",
-  24: "Alice Walton, daughter of Walmart's founder, was noted in the lecture as the world’s richest woman following inheritances/stock movement — she is commonly cited among the wealthiest individuals.",
-  25: "The New Development Bank (NDB) added Indonesia as a new member per the notes; the NDB (BRICS Bank) has its headquarter in Shanghai, which was mentioned alongside this fact.",
-  26: "Operation Brahma was recorded in the lecture as an Indian relief operation to help Myanmar after an earthquake — the notes listed India’s humanitarian operations with their names and targets.",
-  27: "The UK was mentioned as the first country to criminalize AI child abuse — the lecture pointed out the UK’s legislative move in this novel legal area.",
-  28: "Hungary was stated to have withdrawn from the International Criminal Court (ICC) — the notes declared it was the first European country to do so.",
-  29: "India and Nicaragua signed an umbrella agreement to implement Quick Impact Projects (QIPs) — the note explained an umbrella agreement is a framework under which multiple projects/agreements can be implemented.",
-  30: "Hatsushima (Japan) hosted the world’s first 3D-printed railway station assembled from prefabricated parts in six hours — the lecture highlighted rapid 3D-printing construction achievements.",
-  31: "India’s first 3D-printed post office was said to be in Bengaluru in the notes — used as an example of India’s adoption of additive manufacturing for infrastructure.",
-  32: "IIT Hyderabad was credited in the lecture with building the world's highest 3D-printed military bunker in Leh — the notes cited this as an Indian technological milestone.",
-  33: "The 16th BRICS Summit was held in Kazan, Russia as mentioned in the lecture; the speaker referenced the summit’s theme and India’s participation.",
-  34: "The lecture listed the new BRICS members (examples in the notes): Egypt, Ethiopia, Iran, UAE and Indonesia were identified as recent additions to the grouping.",
-  35: "Vizhinjam (spelled Vinjajam in parts of the notes) transshipment port was referenced — the notes discussed transshipment routes and the port’s role for neighbouring countries’ cargo.",
-  36: "World Meditation Day was noted in the lecture as being celebrated on 21 December, and the note linked it with winter solstice timing in the lecture's calendar facts.",
-  37: "The notes summarized solstices/equinoxes: summer solstice on/around 21 June is the longest day in the Northern Hemisphere, and the equinoxes are around 21 March and 23 September when day and night durations are roughly equal.",
-  38: "RBI signed a currency swap agreement with the Maldives Monetary Authority, as the lecture described — this was noted to provide financing support up to certain swap window limits.",
-  39: "RBI establishment date listed in the lecture: the Reserve Bank of India came into existence on 1 April 1935 under the RBI Act of 1934 — a standard historical fact emphasized by the speaker.",
-  40: "The lecture reported that South Korea declared martial law under its President in a recent development — this item was presented as an important international update in the notes.",
-  41: "Angola's accession to the International Solar Alliance (ISA) was mentioned in the notes as an example of countries joining ISA to boost renewable energy cooperation.",
-  42: "The UNAT initiative (a UN reform agenda) was said to be launched by UN Secretary-General António Guterres in March 2025, aimed at improving the UN’s efficiency and relevance.",
-  43: "China approved construction of a massive dam on the Yarlung Tsangpo/Brahmaputra upstream region (the notes called it among the world’s largest dam projects and gave an approximate cost figure), an issue raised in the lecture given downstream implications.",
-  44: "The 6th BIMSTEC summit was referenced as being held in Bangkok, Thailand — BIMSTEC (Bay of Bengal Initiative) includes Bangladesh, India, Myanmar, Sri Lanka, Thailand, Nepal and Bhutan (members were discussed).",
-  45: "The 58th ADB Annual Meeting was held in Milan, Italy — the lecture named Milan as the host city for that edition of ADB's annual meeting.",
-  46: "The Asian Development Bank (ADB) headquarters is in Manila, Philippines — the lecture included this common institutional fact while discussing the meeting location.",
-  47: "Raisina Dialogue is an annual geo-political conference held in New Delhi (Raisina Hills) and the notes referred to the 10th edition taking place under a specified theme.",
-  48: "The 10th International Trade Fair in Nepal was reported to be held at Bhrikuti Mandap in Kathmandu — the notes gave the venue explicitly.",
-  49: "Nima Rinji Sherpa (a Nepali climber) was credited in the notes with becoming the youngest to climb all 14 of the world’s highest peaks — the lecture named the mountaineer.",
-  50: "The notes mentioned inauguration of the Honduran Embassy in New Delhi, signalling deeper ties between India and Honduras — the capital (Tegucigalpa) and local details were lightly referenced in lecture.",
-  51: "Deep Seek, a Chinese AI startup powered by DeepSeek V3, was mentioned as an emerging competitor to standard GPT models; the notes flagged it as notable domestic AI progress in China.",
-  52: "The lecture said India ended a transshipment facility that had allowed Bangladesh exports to pass through Indian ports — this policy move was discussed in the subtitle text.",
-  53: "Guinea was reported as having eliminated sleeping sickness — the lecture highlighted the public health achievement and earlier disease-carrier facts (e.g., Trypanosoma protozoa and tsetse fly context).",
-  54: "Sohrai painting from Jharkhand was specifically mentioned as a piece gifted by India’s PM in a diplomatic context — the notes used it to demonstrate India’s cultural diplomacy.",
-  55: "Warli painting is associated with Maharashtra — the lecture noted it while listing art forms and the states they come from (Warli — Maharashtra was explicitly mentioned).",
-  56: "Oxford University Press announced 'brain rot' as its Word of the Year for 2024 according to the lecture; the notes contrasted different dictionaries' choices.",
-  57: "Moldova's accession to the International Solar Alliance (ISA) Framework Agreement was listed in the lecture; the subtitle recorded Moldova had joined ISA.",
-  58: "The ISA headquarters was referenced as being in Gurugram (the notes repeated that ISA is an India–France initiative and has HQ in the Delhi NCR region).",
-  59: "India and France agreed to establish a new national museum in New Delhi (notes used the name 'Yugayug Bharat' or similar in describing the project), described as an India–France collaborative initiative.",
-  60: "The lecture reiterated that equinoxes occur around 21 March and 23 September when the duration of day and night are approximately equal—this was summarised in the subtitle’s final section."
+  1: { text: "The 28th session of the UN Forum on Forests (UNFF) was held at the United Nations Headquarters in New York. The notes specifically say the Indian delegation was led by Shri Sushil Kumar Awasthi.", image: "" },
+2: { text: "China unveiled the CR450 prototype — a very high-speed train designed to achieve speeds up to 450 km/h. This was contrasted with India's fastest semi-high-speed trains (Vande Bharat).", image: "" },
+3: { text: "Hanoi, Vietnam, was recently declared the world's most polluted city.", image: "" },
+4: { text: "Bhutan launched a national crypto-currency tourism payment system allowing tourists to make payments using cryptocurrencies.", image: "" },
+5: { text: "Bhutan's national sport is archery — a long-standing cultural fact.", image: "" },
+6: { text: "Thimphu is the capital of Bhutan.", image: "" },
+7: { text: "Bhutan's currency is the Ngultrum (BTN), pegged to the Indian Rupee.", image: "" },
+8: { text: "West Bengal, Sikkim, Arunachal Pradesh and Assam share borders with Bhutan.", image: "" },
+9: { text: "During his presidency, Donald Trump pulled the US out of the WHO and the Paris Agreement.", image: "" },
+10: { text: "The Paris Agreement (COP21) was negotiated in Paris to limit global warming below 2°C, aiming for 1.5°C.", image: "" },
+11: { text: "The Indus Water Treaty (1960) between India and Pakistan was mediated by the World Bank.", image: "" },
+12: { text: "Pakistan suspended bilateral deals including the Shimla Agreement after India suspended the Indus Water Treaty.", image: "" },
+13: { text: "WASH stands for Water, Sanitation and Hygiene; India–Nepal MoU in WASH sector noted.", image: "" },
+14: { text: "World Economic Forum's annual meeting in Davos (WEF 2025) was the 55th edition held in Davos, Switzerland.", image: "" },
+15: { text: "WHO, WTO and ILO are headquartered in Geneva.", image: "" },
+16: { text: "China constructed a very long expressway tunnel (Atian Shan Shengli tunnel), contrasted with India's longest road tunnels.", image: "" },
+17: { text: "PM Modi attended the AI Action Summit 2025 in Paris alongside French President Macron.", image: "" },
+18: { text: "The 8th Indian Ocean Conference (IOC) was held in Muscat, Oman.", image: "" },
+19: { text: "Lake Tanganyika is bordered by Burundi, the Democratic Republic of the Congo, Tanzania and Zambia.", image: "" },
+20: { text: "IIT Madras opened its first overseas centre in the Lake Tanganyika region.", image: "" },
+21: { text: "A statue of Tamil poet-philosopher Thiruvalluvar was unveiled at Glasgow College of Medicine in Cebu.", image: "" },
+22: { text: "Mount Fantale in Ethiopia released unusually high methane levels during an eruption.", image: "" },
+23: { text: "Uganda, with WHO support, initiated a clinical trial for a vaccine targeting the Sudan strain of Ebola.", image: "" },
+24: { text: "Alice Walton, daughter of Walmart's founder, was noted as the world’s richest woman.", image: "" },
+25: { text: "The New Development Bank (NDB) added Indonesia as a new member; NDB HQ is in Shanghai.", image: "" },
+26: { text: "Operation Brahma was an Indian relief operation to help Myanmar after an earthquake.", image: "" },
+27: { text: "The UK was the first country to criminalize AI child abuse.", image: "" },
+28: { text: "Hungary withdrew from the International Criminal Court (ICC), first European country to do so.", image: "" },
+29: { text: "India and Nicaragua signed an umbrella agreement to implement Quick Impact Projects (QIPs).", image: "" },
+30: { text: "Hatsushima (Japan) hosted the world’s first 3D-printed railway station assembled in six hours.", image: "" },
+31: { text: "India’s first 3D-printed post office was established in Bengaluru.", image: "" },
+32: { text: "IIT Hyderabad built the world's highest 3D-printed military bunker in Leh.", image: "" },
+33: { text: "The 16th BRICS Summit was held in Kazan, Russia; India participated.", image: "" },
+34: { text: "New BRICS members include Egypt, Ethiopia, Iran, UAE and Indonesia.", image: "" },
+35: { text: "Vizhinjam transshipment port was referenced for neighbouring countries’ cargo routes.", image: "" },
+36: { text: "World Meditation Day is celebrated on 21 December, linked with winter solstice.", image: "" },
+37: { text: "Summer solstice on 21 June is the longest day in Northern Hemisphere; equinoxes around 21 March & 23 September.", image: "" },
+38: { text: "RBI signed a currency swap agreement with Maldives Monetary Authority to provide financing support.", image: "" },
+39: { text: "Reserve Bank of India came into existence on 1 April 1935 under RBI Act of 1934.", image: "" },
+40: { text: "South Korea declared martial law under its President in a recent development.", image: "" },
+41: { text: "Angola joined the International Solar Alliance (ISA) to boost renewable energy cooperation.", image: "" },
+42: { text: "UNAT initiative launched by UN Secretary-General António Guterres in March 2025 to improve UN efficiency.", image: "" },
+43: { text: "China approved construction of a massive dam on Yarlung Tsangpo/Brahmaputra upstream region.", image: "" },
+44: { text: "The 6th BIMSTEC summit was held in Bangkok, Thailand; members include Bangladesh, India, Myanmar, Sri Lanka, Thailand, Nepal and Bhutan.", image: "" },
+45: { text: "The 58th ADB Annual Meeting was held in Milan, Italy.", image: "" },
+46: { text: "Asian Development Bank (ADB) headquarters is in Manila, Philippines.", image: "" },
+47: { text: "Raisina Dialogue is an annual geo-political conference held in New Delhi; 10th edition noted.", image: "" },
+48: { text: "The 10th International Trade Fair in Nepal was held at Bhrikuti Mandap, Kathmandu.", image: "" },
+49: { text: "Nima Rinji Sherpa became the youngest to climb all 14 of the world’s highest peaks.", image: "" },
+50: { text: "Honduran Embassy inaugurated in New Delhi, signalling deeper ties between India and Honduras.", image: "" },
+51: { text: "Deep Seek, a Chinese AI startup powered by DeepSeek V3, emerged as a competitor to standard GPT models.", image: "" },
+52: { text: "India ended a transshipment facility that allowed Bangladesh exports to pass through Indian ports.", image: "" },
+53: { text: "Guinea eliminated sleeping sickness, a major public health achievement.", image: "" },
+54: { text: "Sohrai painting from Jharkhand was gifted by India’s PM in a diplomatic context.", image: "" },
+55: { text: "Warli painting is associated with Maharashtra.", image: "" },
+56: { text: "Oxford University Press announced 'brain rot' as Word of the Year 2024.", image: "" },
+57: { text: "Moldova joined the International Solar Alliance (ISA) Framework Agreement.", image: "" },
+58: { text: "ISA headquarters is in Gurugram, India.", image: "" },
+59: { text: "India and France agreed to establish a new national museum in New Delhi ('Yugayug Bharat').", image: "" },
+60: { text: "Equinoxes occur around 21 March and 23 September when day and night are approximately equal.", image: "" }
+
 };
-
-/* Example helper: showExplanation(num)
-   (This assumes you have bootstrap modal with id 'explanationModal' and element id 'explanationContent')
-*/
-function showExplanation(num) {
-  const q = questions[num];
-  const e = explanations[num] || "No explanation provided.";
-  if (!q) return;
-  document.getElementById('explanationContent').innerHTML = `
-    <p><strong>Q${num}.</strong> ${q.text}</p>
-    <p><strong>Options:</strong></p>
-    <ul>
-      ${q.options.map((opt, idx) => `<li>${idx+1}. ${opt}</li>`).join('')}
-    </ul>
-    <p><strong>Correct Answer:</strong> ${q.options[parseInt(q.correct)-1]}</p>
-    <hr>
-    <p><strong>Explanation:</strong> ${e}</p>
-  `;
-  // Show modal (requires bootstrap js)
-  const modalEl = document.getElementById('explanationModal');
-  if (modalEl && typeof bootstrap !== 'undefined') {
-    new bootstrap.Modal(modalEl).show();
-  }
-}
-
-// Export for module usage (if using modules)
-if (typeof module !== 'undefined') {
-  module.exports = { totalQuestions, questions, explanations, showExplanation };
-}
