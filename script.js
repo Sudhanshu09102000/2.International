@@ -283,7 +283,7 @@ const questions = {
   },
   57: {
     text: "Which country joined the International Solar Alliance (ISA) as per the notes (example listed)?",
-    options: ["Moldova", "Malta", "Monaco", "Moldova"], // kept duplicate intentionally per note - correct is Moldova
+    options: ["Moldova", "Malta", "Monaco", "Maldives"], // kept duplicate intentionally per note - correct is Moldova
     correct: "1"
   },
   58: {
@@ -292,7 +292,7 @@ const questions = {
     correct: "1"
   },
   59: {
-    text: "Which organisation was said to be planning a new national museum in New Delhi named 'Yugayug Bharat' (India-France collaboration was noted)?",
+    text: "Which organisation was said to be planning a new national museum in New Delhi named 'Yuga yugin Bharat' (India-France collaboration was noted)?",
     options: ["India & France collaboration for new national museum in New Delhi", "UNESCO alone", "British Museum collaboration", "World Bank funding project"],
     correct: "1"
   },
@@ -362,7 +362,7 @@ const explanations = {
 56: { text: "Oxford University Press announced 'brain rot' as Word of the Year 2024.", image: "" },
 57: { text: "Moldova joined the International Solar Alliance (ISA) Framework Agreement.", image: "" },
 58: { text: "ISA headquarters is in Gurugram, India.", image: "" },
-59: { text: "India and France agreed to establish a new national museum in New Delhi ('Yugayug Bharat').", image: "" },
+59: { text: "India and France agreed to establish a new national museum in New Delhi ('Yuga yugin Bharat').", image: "" },
 60: { text: "Equinoxes occur around 21 March and 23 September when day and night are approximately equal.", image: "" }
 
 };
